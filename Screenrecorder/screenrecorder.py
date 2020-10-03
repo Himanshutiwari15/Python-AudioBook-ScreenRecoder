@@ -6,10 +6,10 @@ size = (ImageGrab.grab()).size
 output = cv2.VideoWriter("output.mp4",fourcc,5.0,size)
 while True:
     img = np.array(ImageGrab.grab())
-    frame = cv2.cvColor(img,cv2.COLOR_BGR2RGB)
+    frame = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     cv2.imshow("Screen",frame)
     output.write(img)
-    if cv2.waitkey(1)==27:
+    if cv2.waitKey(1)==27:
        break
 output.release()
-cv2.destroyAllWindows
+cv2.destroyAllWindows()
