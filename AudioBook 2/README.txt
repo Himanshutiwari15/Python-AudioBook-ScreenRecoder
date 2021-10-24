@@ -1,6 +1,6 @@
 PDF TO AUDIO   (AUDIOBOOK)
 
-You’ll need to install few libraries.
+You will need to install few libraries.
 Pytssx3   	(pip install pytts3)
 PyPDF2 	(pip install PyPDF2)
 gtts         	(pip install gtts)
